@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       bitbucket.org/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-pumpkin-uguisu.sh
-        container: qc.acc_shaky-orange-mau
+        - /usr/bin/env sh .sqa/script.wimpy-chestnut-barb.sh
+        container: qc.acc_frumpy-persimmon-akbash
   QC.Doc:
     repos:
       bitbucket.org/cessda/cessda.metadata.harvester find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-ivory-quokka.sh
-        container: qc.doc_sleepy-orchid-hyena
+        - /usr/bin/env sh .sqa/script.snoopy-apricot-insect.sh
+        container: qc.doc_lousy-sapphire-chimpanzee
       bitbucket.org/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-corn-snail.sh
-        container: qc.doc_wimpy-puce-lionfish
+        - /usr/bin/env sh .sqa/script.nippy-plum-booby.sh
+        container: qc.doc_shabby-dandelion-rattlesnake
       bitbucket.org/cessda/cessda.metadata.harvester markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-flax-heron.sh
-        container: qc.doc_sleepy-brass-gopher
+        - /usr/bin/env sh .sqa/script.homey-grey-monkey.sh
+        container: qc.doc_foggy-taupe-spitz
   QC.Lic:
     repos:
       bitbucket.org/cessda/cessda.metadata.harvester licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-razzmatazz-donkey.sh
-        container: qc.lic_pasty-cinnabar-fossa
+        - /usr/bin/env sh .sqa/script.squirrely-puce-antelope.sh
+        container: qc.lic_bumpy-ivory-sponge
   QC.Sty:
     repos:
       bitbucket.org/cessda/cessda.metadata.harvester checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-tangerine-setter.sh
-        container: qc.sty_droopy-magenta-forest
+        - /usr/bin/env sh .sqa/script.snazzy-eggplant-oyster.sh
+        container: qc.sty_fuzzy-chestnut-peccary
       bitbucket.org/cessda/cessda.metadata.harvester jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-amethyst-zonkey.sh
-        container: qc.sty_tasty-malachite-cuscus
+        - /usr/bin/env sh .sqa/script.flimsy-maroon-whale.sh
+        container: qc.sty_hilly-mauve-oyster
   QC.Ver:
     repos:
       bitbucket.org/cessda/cessda.metadata.harvester get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-maroon-spaniel.sh
-        container: qc.ver_crappy-tangerine-ferret
+        - /usr/bin/env sh .sqa/script.trippy-harlequin-foxhound.sh
+        container: qc.ver_greasy-copper-jellyfish
 timeout: 1800
