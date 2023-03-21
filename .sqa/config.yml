@@ -5,7 +5,7 @@ config:
       branch: release/1.7.9
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cessda/cessda.metadata.harvester:
-      branch: main
+      branch: 489-improve-harvester-sqa-rating
       repo: https://github.com/cessda/cessda.metadata.harvester
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,42 +15,48 @@ sqa_criteria:
     repos:
       github.com/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-vermilion-bongo.sh
-        container: qc.acc_muzzy-apricot-mandrill
+        - /usr/bin/env sh .sqa/script.skanky-yellow-otter.sh
+        container: qc.acc_skimpy-wheat-salamander
   QC.Doc:
     repos:
       github.com/cessda/cessda.metadata.harvester find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-teal-pinscher.sh
-        container: qc.doc_homely-cyan-oyster
+        - /usr/bin/env sh .sqa/script.sleazy-linen-ray.sh
+        container: qc.doc_stinky-apricot-cow
       github.com/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-aquamarine-starfish.sh
-        container: qc.doc_homely-celadon-dragonfly
+        - /usr/bin/env sh .sqa/script.lousy-brown-tarsier.sh
+        container: qc.doc_lumpy-seashell-dugong
       github.com/cessda/cessda.metadata.harvester markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-ecru-dragonfly.sh
-        container: qc.doc_sunny-amethyst-mastiff
+        - /usr/bin/env sh .sqa/script.beady-mustard-labradoodle.sh
+        container: qc.doc_bluesy-gamboge-avocet
   QC.Lic:
     repos:
       github.com/cessda/cessda.metadata.harvester licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-harlequin-tzu.sh
-        container: qc.lic_foggy-turquoise-millipede
+        - /usr/bin/env sh .sqa/script.chewy-sapphire-kudu.sh
+        container: qc.lic_scummy-sepia-mongrel
+  QC.Met:
+    repos:
+      github.com/cessda/cessda.metadata.harvester cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.chummy-firebrick-liger.sh
+        container: qc.met_sleazy-black-lion
   QC.Sty:
     repos:
       github.com/cessda/cessda.metadata.harvester checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-salmon-okapi.sh
-        container: qc.sty_gloppy-pear-centipede
+        - /usr/bin/env sh .sqa/script.thirsty-dandelion-seahorse.sh
+        container: qc.sty_smelly-cinnamon-cichlid
       github.com/cessda/cessda.metadata.harvester jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-amethyst-camel.sh
-        container: qc.sty_cloudy-olivine-balinese
+        - /usr/bin/env sh .sqa/script.jumpy-khaki-dogfish.sh
+        container: qc.sty_clammy-corn-squirt
   QC.Ver:
     repos:
       github.com/cessda/cessda.metadata.harvester get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-cinnamon-earwig.sh
-        container: qc.ver_chewy-ochre-gorilla
+        - /usr/bin/env sh .sqa/script.lousy-eggplant-eagle.sh
+        container: qc.ver_sleazy-khaki-cockroach
 timeout: 5400
