@@ -5,5 +5,5 @@
 
 (
 cd github.com/cessda/cessda.metadata.harvester &&
-    cffconvert --validate
+    licensee detect . --confidence 60 --json 
 )

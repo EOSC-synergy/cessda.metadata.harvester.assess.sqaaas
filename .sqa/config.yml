@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.1
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cessda/cessda.metadata.harvester:
       branch: main
@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-cerulean-blue.sh
-        container: qc.acc_foggy-ochre-otter
+        - /usr/bin/env sh .sqa/script.clove_jubilant_lemur.sh
+        container: qc.acc_royal_protective_caribou
   QC.Doc:
     repos:
       github.com/cessda/cessda.metadata.harvester find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-aqua-capybara.sh
-        container: qc.doc_cranky-cinnabar-goat
+        - /usr/bin/env sh .sqa/script.alabaster_outgoing_chipmunk.sh
+        container: qc.doc_blush_ardent_eagle
       github.com/cessda/cessda.metadata.harvester git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-persimmon-angora.sh
-        container: qc.doc_sleepy-sepia-loon
+        - /usr/bin/env sh .sqa/script.horizon_goofy_griffin.sh
+        container: qc.doc_beige_candid_fox
       github.com/cessda/cessda.metadata.harvester markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-crimson-serval.sh
-        container: qc.doc_trippy-ruby-vulture
+        - /usr/bin/env sh .sqa/script.blush_dramatic_sparrow.sh
+        container: qc.doc_chestnut_skeptical_crocodile
   QC.Lic:
     repos:
       github.com/cessda/cessda.metadata.harvester licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-rose-cassowary.sh
-        container: qc.lic_homely-brass-macaw
+        - /usr/bin/env sh .sqa/script.amethyst_flexible_rabbit.sh
+        container: qc.lic_peony_zany_boa
   QC.Met:
     repos:
       github.com/cessda/cessda.metadata.harvester cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-charcoal-gerbil.sh
-        container: qc.met_tacky-azure-havanese
+        - /usr/bin/env sh .sqa/script.gunmetal_pensive_hydra.sh
+        container: qc.met_flax_confident_crow
   QC.Sty:
     repos:
       github.com/cessda/cessda.metadata.harvester checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-violet-zorse.sh
-        container: qc.sty_cranky-sangria-peccary
+        - /usr/bin/env sh .sqa/script.marigold_perceptive_nighthawk.sh
+        container: qc.sty_storm_forgiving_moth
       github.com/cessda/cessda.metadata.harvester jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-blue-monster.sh
-        container: qc.sty_shaky-mauve-burmese
+        - /usr/bin/env sh .sqa/script.cerulean_generous_gibbon.sh
+        container: qc.sty_avocado_resilient_ibex
       github.com/cessda/cessda.metadata.harvester rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-myrtle-lizard.sh
-        container: qc.sty_trippy-violet-millipede
+        - /usr/bin/env sh .sqa/script.snow_helpful_bat.sh
+        container: qc.sty_cinnabar_diligent_bear
   QC.Ver:
     repos:
       github.com/cessda/cessda.metadata.harvester get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-ivory-squid.sh
-        container: qc.ver_droopy-periwinkle-bonobo
+        - /usr/bin/env sh .sqa/script.glacier_friendly_lynx.sh
+        container: qc.ver_pine_innocent_quail
 timeout: 5400
